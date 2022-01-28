@@ -1,5 +1,6 @@
 import Layout from "../layout";
 import Head from "next/head";
+import CustomCrousel from "../components/CustomCrousel";
 
 export default function Home() {
   return (
@@ -8,18 +9,16 @@ export default function Home() {
         <Head>
           <title>MSC JOBS</title>
           <link rel="icon" href="/msc-logo.svg" />
-          <meta name="twitter:title" content="TITLE OF POST OR PAGE" />
-          <meta
-            name="twitter:description"
-            content="DESCRIPTION OF PAGE CONTENT"
-          />
-          <meta name="twitter:image" content="LINK TO IMAGE" />
-          <meta name="twitter:site" content="@USERNAME" />
-          <meta name="twitter:creator" content="@USERNAME" />
+          <meta name="MSC JOBS" content="Landing page of msc jobs " />
+          <meta name="Location" content="Bhubaneswar" />
+          <meta name="type" content="Consultancy" />
         </Head>
+
+        <CustomCrousel />
+
         <img
           src="https://picsum.photos/200/300"
-          className="w-full"
+          className="w-full h-1/2"
           alt="testingImg"
         />
       </div>
