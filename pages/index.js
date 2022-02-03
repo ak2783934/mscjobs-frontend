@@ -1,6 +1,8 @@
 import Layout from "../layout";
 import Head from "next/head";
-import CustomCrousel from "../components/CustomCrousel";
+import BGWithSearch from "../components/BGWithSearch";
+import CompanyCarousal from "../components/CompanyCarousal";
+import PosterSection from "../components/PosterSection";
 
 export default function Home() {
   return (
@@ -14,13 +16,9 @@ export default function Home() {
           <meta name="type" content="Consultancy" />
         </Head>
 
-        <CustomCrousel />
-
-        <img
-          src="https://picsum.photos/200/300"
-          className="w-full h-1/2"
-          alt="testingImg"
-        />
+        <BGWithSearch />
+        <CompanyCarousal />
+        <PosterSection />
       </div>
     </Layout>
   );

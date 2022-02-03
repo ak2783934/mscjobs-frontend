@@ -14,19 +14,19 @@ const RightArrow = () => {
     <div className="px-10 pt-14">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="h-10 w-10"
+        className="w-10 h-10"
         viewBox="0 0 20 20"
         fill="currentColor"
       >
         <path
-          fill-rule="evenodd"
+          fillRule="evenodd"
           d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
         />
         <path
-          fill-rule="evenodd"
+          fillRule="evenodd"
           d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
         />
       </svg>
     </div>
@@ -42,9 +42,9 @@ const LeftArrow = () => {
         fill="currentColor"
       >
         <path
-          fill-rule="evenodd"
+          fillRule="evenodd"
           d="M15.707 15.707a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 010 1.414zm-6 0a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 1.414L5.414 10l4.293 4.293a1 1 0 010 1.414z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
         />
       </svg>
     </div>
@@ -52,17 +52,6 @@ const LeftArrow = () => {
 };
 
 const CustomCrousel = () => {
-  const myText = [
-    "fasdfasdfasdf fasdfasd asdfasdf ",
-    "fasdf asdfasd asdf",
-    "dfasdf asdfasd asdfa",
-    "sdfasd asdfasd",
-    "fasdf asdfasd qerawdefasd",
-    "asdfasdfaa asdfasdfas asdfa",
-    "fasdfase asdffwec ",
-    "sdf weradc asdfawf gasdf",
-    "asdfwe aserasdcas aseradfc",
-  ];
   return (
     <div className="w-auto h-auto">
       <Carousel

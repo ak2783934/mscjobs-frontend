@@ -1,0 +1,80 @@
+import React from "react";
+
+const BGWithSearch = () => {
+  return (
+    <div
+      style={{
+        backgroundImage: `url(/bgimage.svg)`,
+        backgroundSize: "contain",
+        backgroundRepeat: "no-repeat",
+        // height: "600px",
+      }}
+      className="w-full my-4 md:h-[35rem]"
+    >
+      <div className="w-auto px-4 py-2 text-sm font-bold text-center md:py-4 md:text-left md:pt-16 md:pb-10 md:text-4xl md:px-14">
+        5,000+ JOBS. CONNECT TO BETTER CAREER OPTIONS
+      </div>
+
+      <div className="md:grid md:grid-cols-2 md:gap-10">
+        <div className="relative h-auto">
+          <div className="w-4/5 h-full mx-auto bg-black bg-opacity-75 md:absolute md:right-0 rounded-xl">
+            <div className="py-1 text-lg font-bold text-center text-white md:py-5 md:text-4xl">
+              Job Search by Profession
+            </div>
+            <div className="flex flex-row w-4/5 mx-auto md:px-20">
+              <div>
+                <input
+                  placeholder="Search by profession"
+                  className="h-6 px-3 py-1 text-sm w-44 md:h-12 md:w-72"
+                />
+              </div>
+              <div className="h-6 px-4 md:py-2 md:h-12 grow md:px-10 bg-searchBg">
+                <button className="text-sm font-bold text-white">SEARCH</button>
+              </div>
+            </div>
+            <div className="px-4 py-2 text-white text-tiny md:text-xs md:py-6">
+              Leading Job Portal for Nobel Professions like Teaching, Academic
+              Mentor & such more. Trending Available Locations : Jharkhand,
+              Bihar, Kolkata, Chattisgarh
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-row my-4 md:relative md:h-56 md:mx-32">
+          <div className="w-2/5 mx-auto text-center text-white bg-black rounded md:absolute md:bottom-0 bg-opacity-90 md:h-3/5 ">
+            <div className="pt-3 pb-2 text-sm font-bold leading-4 md:pt-4 md:text-lg ">
+              New to MSC Jobs
+            </div>
+            <div className="text-xs font-bold leading-4 md:text-sm text-violet-700">
+              Connect with us
+            </div>
+            <div className="flex flex-row text-xs font-bold leading-5">
+              <hr className="w-1/3 mx-3 my-3" /> <span>OR</span>{" "}
+              <hr className="w-1/3 mx-3 my-3" />
+            </div>
+            <div className="h-auto px-2 py-1 mx-3 my-1 text-xs font-bold rounded md:text-sm bg-uploadResumeBg">
+              UPLOAD RESUME
+            </div>
+          </div>
+
+          <div className="w-2/5 mx-auto text-center text-white bg-black rounded md:absolute md:bottom-0 md:right-0 bg-opacity-90 md:h-3/5 ">
+            <div className="pt-3 pb-2 text-sm font-bold leading-4 md:pt-4 md:text-lg ">
+              Free Job Alert
+            </div>
+            <div className="text-xs font-bold leading-4 md:text-sm text-violet-700">
+              Get all jobs update
+            </div>
+            <div className="text-xs font-bold leading-4 md:text-sm text-violet-700">
+              on your email
+            </div>
+            <div className="px-1 py-1 mx-2 my-2 text-xs text-sm font-bold border-2 rounded text-alert">
+              Click here for Job Alert
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default BGWithSearch;
