@@ -21,15 +21,17 @@ const BGWithSearch = () => {
             <div className="py-1 text-lg font-bold text-center text-white md:py-5 md:text-4xl">
               Job Search by Profession
             </div>
-            <div className="flex flex-row w-4/5 mx-auto md:px-20">
+            <div className="flex flex-row w-4/5 mx-auto ">
               <div>
                 <input
                   placeholder="Search by profession"
-                  className="h-6 px-3 py-1 text-sm w-44 md:h-12 md:w-72"
+                  className="h-6 px-3 py-1 text-sm md:text-lg w-44 md:h-12 md:w-72"
                 />
               </div>
               <div className="h-6 px-4 md:py-2 md:h-12 grow md:px-10 bg-searchBg">
-                <button className="text-sm font-bold text-white">SEARCH</button>
+                <button className="text-sm font-bold text-white md:text-lg">
+                  SEARCH
+                </button>
               </div>
             </div>
             <div className="px-4 py-2 text-white text-tiny md:text-xs md:py-6">

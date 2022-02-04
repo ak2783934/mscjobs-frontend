@@ -6,13 +6,13 @@ const PosterSection = () => {
   return (
     <div className="flex flex-row mx-4 md:mx-10">
       <div className="grow">
-        <div className="relative w-full h-93">
+        <div className="relative w-full md:h-93">
           <Image alt="our-service" src={"/our-service.svg"} layout="fill" />
         </div>
-        <div className="relative w-full h-93">
+        <div className="relative w-full md:h-93">
           <Image alt="work-with-us" src={"/work-with-us.svg"} layout="fill" />
         </div>
-        <div className="relative w-full h-100">
+        <div className="relative w-full md:h-100">
           <Image alt="girl-pic" src={"/girl-pic.svg"} layout="fill" />
         </div>
       </div>
