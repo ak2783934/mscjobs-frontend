@@ -16,7 +16,9 @@ export default function Home() {
           <meta name="Location" content="Bhubaneswar" />
           <meta name="type" content="Consultancy" />
         </Head>
-
+        <marquee className="text-xl text-red-800">
+          Site under construction
+        </marquee>
         <BGWithSearch />
         <CompanyCarousal />
         <PosterSection />

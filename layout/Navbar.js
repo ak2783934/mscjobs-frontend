@@ -47,35 +47,35 @@ const Navbar = () => {
         <div className={myClass[cnt]} id="menu">
           <ul className="text-sm text-center text-white lg:text-base md:text-sm bg-navbar md:flex md:justify-between md:pt-0">
             <li>
-              <Link href="/#">
+              <Link href="/governmentjobs">
                 <a className="block h-full py-2 md:p-2 lg:p-4 md:py-4 hover:underline">
                   GOVERNMENT JOBS
                 </a>
               </Link>
             </li>
             <li>
-              <Link href="/#">
+              <Link href="/teachingjobs">
                 <a className="block h-full py-2 md:p-2 lg:p-4 md:py-4 hover:underline">
-                  HOME TUTOR
+                  TEACHING JOBS
                 </a>
               </Link>
             </li>
             <li>
-              <Link href="/#">
+              <Link href="/careertips">
                 <a className="block h-full py-2 md:p-2 lg:p-4 md:py-4 hover:underline">
                   CAREER TIPS
                 </a>
               </Link>
             </li>
             <li>
-              <Link href="/#">
+              <Link href="/studymaterials">
                 <a className="block h-full py-2 md:p-2 lg:p-4 md:py-4 hover:underline">
                   STUDY MATERIAL
                 </a>
               </Link>
             </li>
             <li>
-              <Link href="/#">
+              <Link href="/premiumservices">
                 <a className="block h-auto px-2 py-2 mx-8 mt-3 text-sm text-black rounded bg-premium hover:underline">
                   PREMIUM SERVICE
                 </a>
