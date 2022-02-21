@@ -70,7 +70,7 @@ const Navbar = () => {
             <li>
               <Link href="/studymaterials">
                 <a className="block h-full py-2 md:p-2 lg:p-4 md:py-4 hover:underline">
-                  STUDY MATERIAL
+                  STUDY MATEARIAL
                 </a>
               </Link>
             </li>
@@ -83,12 +83,12 @@ const Navbar = () => {
             </li>
             <li className="mx-8">
               <div className="flex flex-col block h-full py-2 md:p-2">
-                <Link href="/#">
+                <Link href="/applyhere">
                   <button className="h-auto px-4 py-1 my-1 text-sm text-white border-2 border-black rounded hover:underline hover:border-yellow-300">
                     APPLY HERE
                   </button>
                 </Link>
-                <Link href="/#">
+                <Link href="/applyhere">
                   <a className="text-xs text-center text-premium hover:underline">
                     Signup as Employer
                   </a>
