@@ -13,8 +13,8 @@ const Navbar = () => {
         <div>
           <Link href="/">
             <a className="flex flex-col items-center px-4 md:px-0">
-              <img src="/msc-logo.svg" className="h-8 md:h-12" alt="msc-logo" />
-              <div className="pt-1 text-xs text-white md:pt-0 md:text-sm ">
+              <img src="/msc-logo.svg" className="h-8 md:h-14" alt="msc-logo" />
+              <div className="pt-1 text-white text-tiny md:pt-0 md:text-sm ">
                 Better Career
               </div>
             </a>

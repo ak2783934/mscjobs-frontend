@@ -15,10 +15,10 @@ const Footer = () => {
               </div>
 
               <div className="w-2/3 pl-3 text-sm">
-                <div className="font-bold">The Miracle Tutorial</div>
-                <div> Phase 2, Dumduma </div>
-                <div> Near SBI, Bhubaneswar</div>
-                <div> Odisha, 751019</div>
+                <div className="font-bold">Maa Saraswati Consultancy</div>
+                <div> G-231, Third Floor, Techno </div>
+                <div> Garden, Banglore</div>
+                <div> kharnataka- 751019</div>
               </div>
             </div>
             <div className="flex flex-row">
