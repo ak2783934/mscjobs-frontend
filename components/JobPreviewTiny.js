@@ -13,9 +13,7 @@ const JobPreviewTiny = ({ job }) => {
         No of vacancies : {job.vacancies}
       </div>
       <Link href="/">
-        <div className="text-right cursor-pointer text-tiny">
-          Explore more >>
-        </div>
+        <div className="text-right cursor-pointer text-tiny">Explore more</div>
       </Link>
     </div>
   );

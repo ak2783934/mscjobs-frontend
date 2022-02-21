@@ -15,7 +15,7 @@ const index = () => {
       </Head>
       <div className="bg-[#008DF4] w-full">
         <div className="px-20 py-3 font-bold md:px-32 text-md md:text-4xl">
-          <Link href="/">Home</Link>>> Study Materials
+          <Link href="/">Home</Link> Study Materials
         </div>
         <div className="flex flex-row py-4">
           <div className="hidden w-1/3 md:block">

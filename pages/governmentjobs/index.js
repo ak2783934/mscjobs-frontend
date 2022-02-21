@@ -28,7 +28,7 @@ const index = () => {
       </Head>
       <div className="bg-[#008DF4] w-full">
         <div className="px-20 py-3 font-bold md:px-32 text-md md:text-4xl">
-          <Link href="/">Home</Link>>> Government Jobs
+          <Link href="/">Home</Link> Government Jobs
         </div>
         <div className="flex flex-row py-4">
           <div className="hidden w-1/3 md:block">
@@ -78,10 +78,10 @@ const index = () => {
               </div>
               <hr />
               <div className="grid grid-cols-2 text-xs text-center md:text-sm">
-                <button class="border-t border-r py-1 border-gray-600 shadow font-medium hover:cursor-pointer">
+                <button className="py-1 font-medium border-t border-r border-gray-600 shadow hover:cursor-pointer">
                   State Government Jobs
                 </button>
-                <button class="border-t py-1 border-gray-600  font-medium hover:cursor-pointer">
+                <button className="py-1 font-medium border-t border-gray-600 hover:cursor-pointer">
                   Central Government Jobs
                 </button>
               </div>
