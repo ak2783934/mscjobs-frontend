@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const BGWithSearch = () => {
   return (
@@ -54,9 +55,11 @@ const BGWithSearch = () => {
               <hr className="w-1/3 mx-3 my-3" /> <span>OR</span>{" "}
               <hr className="w-1/3 mx-3 my-3" />
             </div>
-            <div className="h-auto px-2 py-1 mx-3 my-1 text-xs font-bold rounded md:text-sm bg-uploadResumeBg">
-              UPLOAD RESUME
-            </div>
+            <Link href="/uploadresume">
+              <div className="h-auto px-2 py-1 mx-3 my-1 text-xs font-bold rounded cursor-pointer md:text-sm bg-uploadResumeBg">
+                UPLOAD RESUME
+              </div>
+            </Link>
           </div>
 
           <div className="w-2/5 mx-auto text-center text-white bg-black rounded md:absolute md:bottom-0 md:right-0 bg-opacity-90 md:h-3/5 ">
@@ -69,9 +72,11 @@ const BGWithSearch = () => {
             <div className="text-xs font-bold leading-4 md:text-sm text-violet-700">
               on your email
             </div>
-            <div className="px-1 py-1 mx-2 my-2 text-xs text-sm font-bold border-2 rounded text-alert">
-              Click here for Job Alert
-            </div>
+            <Link href="/jobalert">
+              <div className="px-1 py-1 mx-2 my-2 text-xs text-sm font-bold border-2 rounded cursor-pointer text-alert">
+                Click here for Job Alert
+              </div>
+            </Link>
           </div>
         </div>
       </div>
