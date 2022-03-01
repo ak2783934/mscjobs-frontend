@@ -14,7 +14,7 @@ const Navbar = () => {
           <Link href="/">
             <a className="flex flex-col items-center px-4 md:px-0">
               <img src="/msc-logo.svg" className="h-8 md:h-14" alt="msc-logo" />
-              <div className="pt-1 text-white text-tiny md:pt-0 md:text-sm ">
+              <div className="pt-1 text-white font-Rochester text-tiny md:pt-0 md:text-[10px]">
                 Better Career
               </div>
             </a>
@@ -98,6 +98,17 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
+      <div className="flex flex-row">
+        <marquee className="text-xl text-red-800">
+          Site under construction
+        </marquee>
+        <marquee className="text-xl text-red-800">
+          Site under construction
+        </marquee>
+        <marquee className="text-xl text-red-800">
+          Site under construction
+        </marquee>
+      </div>
     </header>
   );
 };

@@ -28,8 +28,8 @@ const Footer = () => {
 
               <div className="w-auto pl-3 text-sm sm:w-3/4">
                 <div>Phone: </div>
-                <a href="tel:6370324756">63707XXXXX</a>
-                <a href="tel:6371809622">, 63718XXXXX</a>
+                <a href="tel:6370324756">7004237947</a>
+                <a href="tel:6371809622">, 8102457542</a>
               </div>
             </div>
             <div className="flex flex-row">
@@ -50,7 +50,13 @@ const Footer = () => {
             Map
           </div>
           <div className="relative h-64 max-w-lg mx-auto sm:max-w-md mt-7">
-            <Image src="/map.jpg" layout="fill" alt="map-image" />
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3743.2779761837314!2d85.78049295068335!3d20.247303119303442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a7c6e9c4d4d1%3A0x1c4d1209e0db1a5d!2sDumduma%20Chhak!5e0!3m2!1sen!2sin!4v1645901124881!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style={{ border: "0" }}
+              loading="lazy"
+            ></iframe>
           </div>
         </div>
       </div>

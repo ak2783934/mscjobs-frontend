@@ -15,10 +15,11 @@ export default function Home() {
           <meta name="MSC JOBS" content="Landing page of msc jobs " />
           <meta name="Location" content="Bhubaneswar" />
           <meta name="type" content="Consultancy" />
+          <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+          />
         </Head>
-        <marquee className="text-xl text-red-800">
-          Site under construction
-        </marquee>
         <BGWithSearch />
         <CompanyCarousal />
         <PosterSection />

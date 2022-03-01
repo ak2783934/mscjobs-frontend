@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import SearchWithButton from "../components/SearchWithButton";
 
 const BGWithSearch = () => {
   return (
@@ -22,18 +23,25 @@ const BGWithSearch = () => {
             <div className="py-1 text-lg font-bold text-center text-white md:py-5 md:text-4xl">
               Job Search by Profession
             </div>
-            <div className="flex flex-row w-4/5 mx-auto ">
-              <div>
+            <div className="w-4/5 mx-auto ">
+              <SearchWithButton />
+
+              {/* <div>
                 <input
+                  style={{
+                    backgroundImage: `url(/search-icon.svg)`,
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "3px 7px",
+                  }}
                   placeholder="Search by profession"
-                  className="h-6 px-3 py-1 text-sm md:text-lg w-44 md:h-12 md:w-72"
+                  className="h-6 px-3 py-1 text-sm indent-3 md:indent-6 md:text-lg w-44 md:h-12 md:w-72 outline-0 "
                 />
               </div>
               <div className="h-6 px-4 md:py-2 md:h-12 grow md:px-10 bg-searchBg">
                 <button className="text-sm font-bold text-white md:text-lg">
                   SEARCH
                 </button>
-              </div>
+              </div> */}
             </div>
             <div className="px-4 py-2 text-white text-tiny md:text-xs md:py-6">
               Leading Job Portal for Nobel Professions like Teaching, Academic
@@ -48,9 +56,11 @@ const BGWithSearch = () => {
             <div className="pt-3 pb-2 text-sm font-bold leading-4 md:pt-4 md:text-lg ">
               New to MSC Jobs
             </div>
-            <div className="text-xs font-bold leading-4 md:text-sm text-violet-700">
-              Connect with us
-            </div>
+            <Link href="/applyhere">
+              <div className="text-xs font-bold leading-4 cursor-pointer md:text-sm text-violet-700">
+                Connect with us
+              </div>
+            </Link>
             <div className="flex flex-row text-xs font-bold leading-5">
               <hr className="w-1/3 mx-3 my-3" /> <span>OR</span>{" "}
               <hr className="w-1/3 mx-3 my-3" />

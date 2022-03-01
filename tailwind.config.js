@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        Changa: ["Changa", "sans-serif"],
+        Rochester: ["Rochester", "cursive"],
+      },
       height: {
         93: "22rem",
         100: "30rem",
