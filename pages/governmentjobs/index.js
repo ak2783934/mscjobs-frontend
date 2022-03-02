@@ -27,8 +27,16 @@ const index = () => {
         <meta name="jobs" content="government" />
       </Head>
       <div className="bg-[#008DF4] w-full">
-        <div className="px-20 py-3 font-bold md:px-32 text-md md:text-4xl">
-          <Link href="/">Home</Link> Government Jobs
+        <div className="flex flex-row px-20 py-3 font-bold md:px-32 text-md md:text-4xl">
+          <Link href="/">Home</Link>{" "}
+          <span>
+            <img
+              src="https://img.icons8.com/ios-glyphs/30/000000/more-than.png"
+              alt="> tag"
+              className="mx-2 mt-2"
+            />
+          </span>{" "}
+          Government Jobs
         </div>
         <div className="flex flex-row py-4">
           <div className="hidden w-1/3 md:block">
