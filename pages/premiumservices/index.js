@@ -1,8 +1,17 @@
 import Layout from "../../layout";
 import Head from "next/head";
 import Link from "next/link";
+import SideBlock from "../../components/SideBlock";
+import BreadCrum from "../../components/BreadCrum";
 
 const index = () => {
+  const premiumService = {
+    title: "Experience Faculty",
+    text1: "Connect with us @ 99/- year",
+    text2: "Experience should be more than 2 years.",
+    text3: "*Premium Assistance",
+  };
+
   return (
     <Layout>
       <Head>
@@ -14,37 +23,9 @@ const index = () => {
         <meta name="jobs" content="government" />
       </Head>
       <div className="bg-[#008DF4] w-full">
-        <div className="flex flex-row px-20 py-3 font-bold md:px-32 text-md md:text-4xl">
-          <Link href="/">Home</Link>{" "}
-          <span>
-            <img
-              src="https://img.icons8.com/ios-glyphs/30/000000/more-than.png"
-              alt="> tag"
-              className="mx-2 mt-2"
-            />
-          </span>{" "}
-          Premium services
-        </div>
+        <BreadCrum pageName="Premium Services" />
         <div className="flex flex-row py-4">
-          <div className="hidden w-1/3 md:block">
-            <div className="bg-white w-[230px] rounded h-auto mx-auto px-4 py-10">
-              <Link href="/governmentjobs">
-                <div className="py-2 cursor-pointer">Government Jobs</div>
-              </Link>
-              <Link href="teachingjobs">
-                <div className="py-2 cursor-pointer">Teaching Jobs</div>
-              </Link>
-              <Link href="otherjobs">
-                <div className="py-2 cursor-pointer">Other Jobs</div>
-              </Link>
-              <Link href="permiummaterials">
-                <div className="py-2 cursor-pointer">Premium Materials</div>
-              </Link>
-              <Link href="careertips">
-                <div className="py-2 cursor-pointer">Career Tips</div>
-              </Link>
-            </div>
-          </div>
+          <SideBlock />
           <div className="grow">
             <div className="bg-white px-2 py-2 mx-12 md:mx-auto my-8 md:w-[650px] rounded">
               <div className="text-sm font-medium md:text-xl">
@@ -72,7 +53,9 @@ const index = () => {
                 </span>
               </div>
               <hr />
-              <div></div>
+              <div className="mx-4">
+                <div className="bg"></div>
+              </div>
             </div>
           </div>
         </div>

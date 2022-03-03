@@ -1,6 +1,8 @@
 import Layout from "../../layout";
 import Head from "next/head";
 import Link from "next/link";
+import SideBlock from "../../components/SideBlock";
+import BreadCrum from "../../components/BreadCrum";
 
 const index = () => {
   return (
@@ -14,43 +16,15 @@ const index = () => {
         <meta name="jobs" content="government" />
       </Head>
       <div className="bg-[#008DF4] w-full">
-        <div className="flex flex-row px-20 py-3 font-bold md:px-32 text-md md:text-4xl">
-          <Link href="/">Home</Link>{" "}
-          <span>
-            <img
-              src="https://img.icons8.com/ios-glyphs/30/000000/more-than.png"
-              alt="> tag"
-              className="mx-2 mt-2"
-            />
-          </span>{" "}
-          Study Materials
-        </div>
+        <BreadCrum pageName="Study Material" />
         <div className="flex flex-row py-4">
-          <div className="hidden w-1/3 md:block">
-            <div className="bg-white w-[230px] rounded h-auto mx-auto px-4 py-10">
-              <Link href="/governmentjobs">
-                <div className="py-2 cursor-pointer">Government Jobs</div>
-              </Link>
-              <Link href="teachingjobs">
-                <div className="py-2 cursor-pointer">Teaching Jobs</div>
-              </Link>
-              <Link href="otherjobs">
-                <div className="py-2 cursor-pointer">Other Jobs</div>
-              </Link>
-              <Link href="permiummaterials">
-                <div className="py-2 cursor-pointer">Premium Materials</div>
-              </Link>
-              <Link href="careertips">
-                <div className="py-2 cursor-pointer">Career Tips</div>
-              </Link>
-            </div>
-          </div>
+          <SideBlock />
           <div className="grow">
-            <div className="bg-white px-2 py-2 mx-12 md:mx-auto my-8 md:w-[650px] rounded">
+            <div className="bg-white px-2 py-2 mx-12 md:mx-auto my-2 md:my-8 md:w-[800px] rounded">
               <div className="text-sm font-medium md:text-xl">
                 Study Materials
               </div>
-              <div className="flex flex-row text-xs md:text-sm">
+              <div className="flex flex-row py-1 text-xs md:text-sm">
                 Share this{" "}
                 <span>
                   <img
@@ -72,7 +46,61 @@ const index = () => {
                 </span>
               </div>
               <hr />
-              <div></div>
+              <div>
+                <div className="my-2">
+                  <div className="text-lg text-center">COURSES</div>
+                  <hr className="my-1 border-t-1" />
+                  <div className="flex flex-row justify-center my-1 text-sm md:text-lg">
+                    <div className="px-2 py-1 rounded bg-[#C4C4C4] mx-1 md:mx-8">
+                      UPSC
+                    </div>
+                    <div className="px-2 py-1 rounded bg-[#C4C4C4] mx-1 md:mx-8">
+                      IITJEE
+                    </div>
+                    <div className="px-2 py-1 rounded bg-[#C4C4C4] mx-1 md:mx-8">
+                      NEET
+                    </div>
+                    <div className="px-2 py-1 rounded bg-[#C4C4C4] mx-1 md:mx-8">
+                      OLYMPIAD
+                    </div>
+                    <div className="px-2 py-1 rounded bg-[#C4C4C4] mx-1 md:mx-8">
+                      NDA
+                    </div>
+                  </div>
+                  <div className="mt-8 text-lg text-center">BOARD</div>
+                  <hr className="my-1 border-t-1" />
+                  <div className="flex flex-row justify-center my-1 text-sm md:text-lg">
+                    <div className="px-2 py-1 rounded bg-[#C4C4C4] mx-1 md:mx-8">
+                      CBSC
+                    </div>
+                    <div className="px-2 py-1 rounded bg-[#C4C4C4] mx-1 md:mx-8">
+                      ICSE
+                    </div>
+                    <div className="px-2 py-1 rounded bg-[#C4C4C4] mx-1 md:mx-8">
+                      JAC
+                    </div>
+                    <div className="px-2 py-1 rounded bg-[#C4C4C4] mx-1 md:mx-8">
+                      BSB
+                    </div>
+                  </div>
+                  <div className="mt-8 text-lg text-center">INSTITUTE</div>
+                  <hr className="my-1 border-t-1" />
+                  <div className="flex flex-row justify-center text-sm md:text-lg">
+                    <div className="px-2 py-1 rounded bg-[#C4C4C4] mx-1 md:mx-8">
+                      FIITJEE
+                    </div>
+                    <div className="px-2 py-1 rounded bg-[#C4C4C4] mx-1 md:mx-8">
+                      BANSAL
+                    </div>
+                    <div className="px-2 py-1 rounded bg-[#C4C4C4] mx-1 md:mx-8">
+                      AKASH
+                    </div>
+                    <div className="px-2 py-1 rounded bg-[#C4C4C4] mx-1 md:mx-8">
+                      ALLEN
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

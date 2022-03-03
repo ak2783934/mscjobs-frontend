@@ -119,7 +119,7 @@ function HomeTutorCarousal() {
       <div className="w-auto px-6 pt-3 text-lg font-bold md:text-4xl">
         Home Tutor Jobs
       </div>
-      <Link href="/#">
+      <Link href="/teachingjobs">
         <div className="px-6 text-xs text-right text-blue-400 cursor-pointer md:px-10 md:text-sm ">
           View all
         </div>
