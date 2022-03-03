@@ -26,7 +26,7 @@ const BGWithSearch = () => {
             <div className="w-4/5 mx-auto ">
               <SearchWithButton />
             </div>
-            <div className="px-4 py-2 text-white text-tiny md:text-xs md:py-6">
+            <div className="px-8 py-2 text-white text-tiny md:text-sm md:py-6">
               Leading Job Portal for Nobel Professions like Teaching, Academic
               Mentor & such more. Trending Available Locations : Jharkhand,
               Bihar, Kolkata, Chattisgarh
@@ -35,8 +35,8 @@ const BGWithSearch = () => {
         </div>
 
         <div className="flex flex-row my-4 md:relative md:h-56 md:mx-32">
-          <div className="w-2/5 mx-auto text-center text-white bg-black rounded md:absolute md:bottom-0 bg-opacity-90 md:h-3/5 ">
-            <div className="pt-3 pb-2 text-sm font-bold leading-4 md:pt-4 md:text-lg ">
+          <div className="w-[45%] mx-auto text-center text-white bg-black rounded md:absolute md:bottom-0 bg-opacity-90 md:h-3/5 ">
+            <div className="pt-3 pb-2 text-sm font-bold leading-4 md:pt-4 md:text-base">
               New to MSC Jobs
             </div>
             <Link href="/applyhere">
@@ -55,8 +55,8 @@ const BGWithSearch = () => {
             </Link>
           </div>
 
-          <div className="w-2/5 mx-auto text-center text-white bg-black rounded md:absolute md:bottom-0 md:right-0 bg-opacity-90 md:h-3/5 ">
-            <div className="pt-3 pb-2 text-sm font-bold leading-4 md:pt-4 md:text-lg ">
+          <div className="w-[45%] mx-auto text-center text-white bg-black rounded md:absolute md:bottom-0 md:right-0 bg-opacity-90 md:h-3/5 ">
+            <div className="pt-3 pb-2 text-sm font-bold leading-4 md:pt-4 md:text-base ">
               Free Job Alert
             </div>
             <div className="text-xs font-bold leading-4 md:text-sm text-violet-700">
