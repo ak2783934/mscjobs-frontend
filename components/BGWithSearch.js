@@ -9,9 +9,9 @@ const BGWithSearch = () => {
         backgroundImage: `url(/bgimage.svg)`,
         backgroundSize: "contain",
         backgroundRepeat: "no-repeat",
-        // height: "600px",
+        backgroundColor: "#008CF3",
       }}
-      className="w-full my-4 md:h-[35rem]"
+      className="w-full my-4 h-auto md:h-[35rem] pb-2 md:pb-0"
     >
       <div className="w-auto px-4 py-2 text-sm font-bold text-center md:py-4 md:text-left md:pt-16 md:pb-10 md:text-4xl md:px-14">
         5,000+ JOBS. CONNECT TO BETTER CAREER OPTIONS
@@ -20,28 +20,11 @@ const BGWithSearch = () => {
       <div className="md:grid md:grid-cols-2 md:gap-10">
         <div className="relative h-auto">
           <div className="w-4/5 h-full mx-auto bg-black bg-opacity-75 md:absolute md:right-0 rounded-xl">
-            <div className="py-1 text-lg font-bold text-center text-white md:py-5 md:text-4xl">
+            <div className="py-1 text-sm font-bold text-center text-white md:py-5 md:text-4xl">
               Job Search by Profession
             </div>
             <div className="w-4/5 mx-auto ">
               <SearchWithButton />
-
-              {/* <div>
-                <input
-                  style={{
-                    backgroundImage: `url(/search-icon.svg)`,
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "3px 7px",
-                  }}
-                  placeholder="Search by profession"
-                  className="h-6 px-3 py-1 text-sm indent-3 md:indent-6 md:text-lg w-44 md:h-12 md:w-72 outline-0 "
-                />
-              </div>
-              <div className="h-6 px-4 md:py-2 md:h-12 grow md:px-10 bg-searchBg">
-                <button className="text-sm font-bold text-white md:text-lg">
-                  SEARCH
-                </button>
-              </div> */}
             </div>
             <div className="px-4 py-2 text-white text-tiny md:text-xs md:py-6">
               Leading Job Portal for Nobel Professions like Teaching, Academic
