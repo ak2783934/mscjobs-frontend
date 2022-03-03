@@ -1,8 +1,17 @@
 import Layout from "../../layout";
 import Head from "next/head";
-import Link from "next/link";
 import SideBlock from "../../components/SideBlock";
 import BreadCrum from "../../components/BreadCrum";
+
+const PremiumServicePreview = ({ service }) => {
+  return (
+    <div className="bg-[#C4C4C4] my-2 mx-2 p-2 rounded">
+      <div>{service.title}</div>
+      <div>{service.text1}</div>
+      <div>{service.text2}</div>
+    </div>
+  );
+};
 
 const index = () => {
   const premiumService = {
@@ -27,11 +36,11 @@ const index = () => {
         <div className="flex flex-row py-4">
           <SideBlock />
           <div className="grow">
-            <div className="bg-white px-2 py-2 mx-12 md:mx-auto my-8 md:w-[650px] rounded">
+            <div className="bg-white px-2 py-2 mx-12 md:mx-auto my-2 md:my-8 md:w-[800px] rounded">
               <div className="text-sm font-medium md:text-xl">
                 Premium Materials
               </div>
-              <div className="flex flex-row text-xs md:text-sm">
+              <div className="flex flex-row py-1 text-xs md:text-sm">
                 Share this{" "}
                 <span>
                   <img
@@ -54,7 +63,10 @@ const index = () => {
               </div>
               <hr />
               <div className="mx-4">
-                <div className="bg"></div>
+                <PremiumServicePreview service={premiumService} />
+                <PremiumServicePreview service={premiumService} />
+                <PremiumServicePreview service={premiumService} />
+                <PremiumServicePreview service={premiumService} />
               </div>
             </div>
           </div>

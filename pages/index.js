@@ -5,6 +5,8 @@ import CompanyCarousal from "../components/CompanyCarousal";
 import PosterSection from "../components/PosterSection";
 import RecentJobsCarousal from "../components/RecentJobsCarousal";
 import HomeTutorCarousal from "../components/HomeTutorCarousal";
+import PremiumServicesCarousal from "../components/PremiumServicesCarousal";
+
 export default function Home() {
   return (
     <Layout>
@@ -25,6 +27,7 @@ export default function Home() {
         <PosterSection />
         <RecentJobsCarousal />
         <HomeTutorCarousal />
+        <PremiumServicesCarousal />
       </div>
     </Layout>
   );
