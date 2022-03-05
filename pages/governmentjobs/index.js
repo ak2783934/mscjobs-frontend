@@ -1,6 +1,6 @@
+import React, { useState } from "react";
 import Layout from "../../layout";
 import Head from "next/head";
-import Link from "next/link";
 import JobPreviewTiny from "../../components/JobPreviewTiny";
 import SideBlock from "../../components/SideBlock";
 import BreadCrum from "../../components/BreadCrum";
@@ -18,6 +18,7 @@ const index = () => {
     type: "government/non government",
     subType: "central governement/state government/teaching/others",
   };
+  const [jobType, setjobType] = useState("state");
   return (
     <Layout>
       <Head>
@@ -60,10 +61,24 @@ const index = () => {
               </div>
               <hr />
               <div className="grid grid-cols-2 text-xs text-center md:text-sm">
-                <button className="py-1 font-medium border-t border-r border-gray-600 shadow hover:cursor-pointer">
+                <button
+                  onClick={() => setjobType("state")}
+                  className={
+                    jobType === "state"
+                      ? "py-1 font-medium border-t border-r border-gray-600 shadow hover:cursor-pointer"
+                      : "py-1 font-medium border-t border-gray-600 hover:cursor-pointer"
+                  }
+                >
                   State Government Jobs
                 </button>
-                <button className="py-1 font-medium border-t border-gray-600 hover:cursor-pointer">
+                <button
+                  onClick={() => setjobType("central")}
+                  className={
+                    jobType === "central"
+                      ? "py-1 font-medium border-t border-r border-gray-600 shadow hover:cursor-pointer"
+                      : "py-1 font-medium border-t border-gray-600 hover:cursor-pointer"
+                  }
+                >
                   Central Government Jobs
                 </button>
               </div>

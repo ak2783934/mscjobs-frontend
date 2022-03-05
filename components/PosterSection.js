@@ -8,11 +8,15 @@ const PosterSection = () => {
   return (
     <div className="flex flex-row mx-4 md:mx-10">
       <div className="grow">
-        <div className="relative w-full md:h-93">
-          <Image alt="our-service" src={"/our-service.svg"} layout="fill" />
+        <div className="relative w-full cursor-pointer md:h-93">
+          <Link href="/ourservice">
+            <Image alt="our-service" src={"/our-service.svg"} layout="fill" />
+          </Link>
         </div>
-        <div className="relative w-full md:h-93">
-          <Image alt="work-with-us" src={"/work-with-us.svg"} layout="fill" />
+        <div className="relative w-full cursor-pointer md:h-93">
+          <Link href="/applyhere">
+            <Image alt="work-with-us" src={"/work-with-us.svg"} layout="fill" />
+          </Link>
         </div>
         <div className="relative w-full md:h-100">
           <Image alt="girl-pic" src={"/girl-pic.svg"} layout="fill" />

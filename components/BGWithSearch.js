@@ -73,6 +73,15 @@ const BGWithSearch = () => {
           </div>
         </div>
       </div>
+      <div className="md:mx-[120px] cursor-pointer">
+        <Link href="http://whatsapp.com">
+          <img
+            src="/whatsapp-logo.png"
+            alt="whatsapp"
+            className="h-[40px] w-[40px] float-right "
+          />
+        </Link>
+      </div>
     </div>
   );
 };

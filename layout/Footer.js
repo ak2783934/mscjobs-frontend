@@ -3,7 +3,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <div id="contactus">
-      <div className="flex flex-col py-6 px-9 sm:px-24 sm:flex-row bg-footerBg">
+      <div className="flex flex-col pb-6 px-9 sm:px-24 sm:flex-row bg-footerBg">
         <div className="flex flex-col sm:w-1/3">
           <div className="pt-10 pb-5 text-lg font-bold text-center text-white underline">
             CONTACT US

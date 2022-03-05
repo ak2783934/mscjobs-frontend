@@ -93,10 +93,6 @@ const index = () => {
                 <div className="text-xl font-bold">Upload resume</div>
                 <input type="file" name="resume" className="h-10 my-2" />
               </div>
-              <div className="w-[50%]">
-                <div className="text-xl font-bold">Upload photo</div>
-                <input type="file" name="resume" className="h-10 my-2" />
-              </div>
             </div>
           </div>
           <div className="w-[20%] text-center py-2 my-4 mx-auto text-lg font-bold bg-blue-400 rounded">
