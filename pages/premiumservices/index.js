@@ -38,7 +38,7 @@ const index = () => {
           <div className="grow">
             <div className="bg-white px-2 py-2 mx-12 md:mx-auto my-2 md:my-8 md:w-[800px] rounded">
               <div className="text-sm font-medium md:text-xl">
-                Premium Materials
+                Premium Services
               </div>
               <div className="flex flex-row py-1 text-xs md:text-sm">
                 Share this{" "}
