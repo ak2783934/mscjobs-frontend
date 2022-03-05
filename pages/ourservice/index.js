@@ -7,7 +7,7 @@ import BreadCrum from "../../components/BreadCrum";
 const OurServicePreview = ({ service }) => {
   return (
     <Link href={service.url}>
-      <div className="bg-[#C4C4C4] cursor-pointer font-bold my-2 mx-2 p-2 rounded">
+      <div className="bg-[#C4C4C4] cursor-pointer font-bold my-4 mx-2 p-2 rounded">
         <div>{service.title}</div>
       </div>
     </Link>
@@ -15,10 +15,20 @@ const OurServicePreview = ({ service }) => {
 };
 
 const index = () => {
-  const ourService = {
-    title: "Experience Faculty",
-    url: "http://google.com",
-  };
+  const ourServices = [
+    {
+      title: "Educational/Teaching Jobs",
+      url: "/teachingjobs",
+    },
+    {
+      title: "Other jobs",
+      url: "/otherjobs",
+    },
+    {
+      title: "Corporate Association",
+      url: "/recentjobs",
+    },
+  ];
 
   return (
     <Layout>
@@ -36,9 +46,7 @@ const index = () => {
           <SideBlock />
           <div className="grow">
             <div className="bg-white px-2 py-2 mx-12 md:mx-auto my-2 md:my-8 md:w-[800px] rounded">
-              <div className="text-sm font-medium md:text-xl">
-                Other services
-              </div>
+              <div className="text-sm font-medium md:text-xl">Our services</div>
               <div className="flex flex-row py-1 text-xs md:text-sm">
                 Share this{" "}
                 <span>
@@ -62,10 +70,9 @@ const index = () => {
               </div>
               <hr />
               <div className="mx-4">
-                <OurServicePreview service={ourService} />
-                <OurServicePreview service={ourService} />
-                <OurServicePreview service={ourService} />
-                <OurServicePreview service={ourService} />
+                {ourServices.map((ourService) => {
+                  return <OurServicePreview service={ourService} />;
+                })}
               </div>
             </div>
           </div>
