@@ -70,7 +70,7 @@ const Navbar = () => {
             <li>
               <Link href="/studymaterials">
                 <a className="block h-full py-2 md:p-2 lg:p-4 md:py-4 hover:underline">
-                  STUDY MATEARIAL
+                  STUDY MATERIAL
                 </a>
               </Link>
             </li>
