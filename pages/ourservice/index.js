@@ -70,8 +70,8 @@ const index = () => {
               </div>
               <hr />
               <div className="mx-4">
-                {ourServices.map((ourService) => {
-                  return <OurServicePreview service={ourService} />;
+                {ourServices.map((ourService, index) => {
+                  return <OurServicePreview key={index} service={ourService} />;
                 })}
               </div>
             </div>
