@@ -18,7 +18,7 @@ const index = () => {
         <hr className="my-4 border-t-2 border-red-400 w-[80%] mx-auto" />
 
         <form className="">
-          <div className="px-4 py-4 w-[80%] md:w-[60%] mx-auto">
+          <div className="px-4 py-4 w-[80%] md:w-[40%] mx-auto">
             <div className="text-xl font-bold"> Name</div>
             <input
               name="name"
@@ -59,7 +59,7 @@ const index = () => {
                   name="phone"
                   type="text"
                   placeholder="Phone number"
-                  className="border border-black rounded w-[80%] md:w-[60%] h-8 text-sm p-3 my-1"
+                  className="border border-black rounded w-[80%] md:w-[80%] h-8 text-sm p-3 my-1"
                 />
               </div>
             </div>

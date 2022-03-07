@@ -32,7 +32,7 @@ const Index = () => {
       <div className="bg-[#008DF4] w-full">
         <BreadCrum pageName="Government Jobs" />
         <div className="flex flex-row py-4">
-          <SideBlock />
+          <SideBlock pageName="governmentjobs" />
           <div className="grow">
             <div className="bg-white px-2 py-2 mx-12 md:mx-auto my-2 md:my-8 md:w-[800px] rounded">
               <div className="text-sm font-medium md:text-xl">

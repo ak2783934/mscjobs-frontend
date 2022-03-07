@@ -17,28 +17,28 @@ const index = () => {
         <div className="text-3xl text-center text-bold">Get Connected</div>
         <hr className="my-4 border-t-2 border-red-400 w-[80%] mx-auto" />
 
-        <form className="">
-          <div className="px-4 py-4 w-[80%] md:w-[60%] mx-auto">
+        <form className="w-[80%] md:w-[40%] mx-auto">
+          <div className="w-full px-4 py-4 mx-auto">
             <div className="text-xl font-bold"> Name</div>
             <input
               name="name"
               type="text"
               placeholder="Type your full name"
-              className="border border-black w-[80%] rounded md:w-[60%] h-8 text-sm p-3 my-1"
+              className="w-full h-8 p-3 my-1 text-sm border border-black rounded"
             />
             <div className="mt-3 text-xl font-bold"> Contact Number</div>
             <input
               name="phoneno"
-              type="text"
+              type="number"
               placeholder="Enter your phone number"
-              className="border border-black rounded w-[40%] h-8 text-sm p-3 my-1"
+              className="w-full h-8 p-3 my-1 text-sm border border-black rounded"
             />
             <div className="mt-3 text-xl font-bold">Email Id</div>
             <input
               name="email"
               type="email"
               placeholder="Email Id"
-              className="border border-black rounded w-[80%] md:w-[60%] h-8 text-sm p-3 my-1"
+              className="w-full h-8 p-3 my-1 text-sm border border-black rounded"
             />
             <div className="flex flex-col my-4 md:flex-row">
               <div className="w-[50%]">
