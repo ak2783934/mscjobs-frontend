@@ -11,6 +11,7 @@ const CustomComp = ({ imgsrc }) => {
       <Image
         src={imgsrc}
         alt="logoimgs"
+        className="-z-50"
         width={size.width < 700 ? 300 : 150}
         height={size.width < 700 ? 300 : 150}
       />

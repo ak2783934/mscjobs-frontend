@@ -1,16 +1,18 @@
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import Link from "next/link";
+import Image from "next/image";
 
 const Layout = ({ children }) => {
   return (
     <div className="flex flex-col w-full min-h-screen">
-      <div className="fixed cursor-pointer bottom-[40px] right-[40px]">
+      <div className="fixed cursor-pointer bottom-[40px] h-[80px] w-[80px]  right-[40px]">
         <Link href="http://whatsapp.com">
-          <img
-            src="/whatsapp-logo.png"
+          <Image
+            src="/whatsapp-logo.svg"
             alt="whatsapp"
-            className="h-[60px] w-[60px]"
+            layout="fill"
+            className="z-[10000]"
           />
         </Link>
       </div>
