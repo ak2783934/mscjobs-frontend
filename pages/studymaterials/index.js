@@ -60,6 +60,9 @@ const index = () => {
                     <div className="px-2 py-1 rounded bg-[#C4C4C4] mx-1 md:mx-8">
                       NEET
                     </div>
+                  </div>
+
+                  <div className="flex flex-row justify-center my-3 text-sm md:text-lg">
                     <div className="px-2 py-1 rounded bg-[#C4C4C4] mx-1 md:mx-8">
                       OLYMPIAD
                     </div>
@@ -67,6 +70,7 @@ const index = () => {
                       NDA
                     </div>
                   </div>
+
                   <div className="mt-8 text-lg text-center">BOARD</div>
                   <hr className="my-1 border-t-1" />
                   <div className="flex flex-row justify-center my-1 text-sm md:text-lg">
@@ -95,6 +99,8 @@ const index = () => {
                     <div className="px-2 py-1 rounded bg-[#C4C4C4] mx-1 md:mx-8">
                       AKASH
                     </div>
+                  </div>
+                  <div className="flex flex-row justify-center my-3 text-sm md:text-lg">
                     <div className="px-2 py-1 rounded bg-[#C4C4C4] mx-1 md:mx-8">
                       ALLEN
                     </div>
