@@ -12,7 +12,7 @@ const JobPreviewTiny = ({ job }) => {
       <div className="px-2 text-xs md:px-8">
         No of vacancies : {job.vacancies}
       </div>
-      <Link href="/">
+      <Link href="/jobPreviewPage">
         <div className="text-right cursor-pointer text-tiny">Explore more</div>
       </Link>
     </div>

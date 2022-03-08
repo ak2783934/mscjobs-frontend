@@ -31,7 +31,7 @@ const index = () => {
         <div className="flex flex-row py-4">
           <SideBlock pageName="teachingjobs" />
           <div className="grow">
-            <div className="bg-white px-2 py-2 mx-12 md:mx-auto my-2 md:my-8 md:w-[800px] rounded">
+            <div className="bg-white px-2 py-2 mx-12 md:mx-auto mb-2 md:mb-8 md:w-[800px] rounded">
               <div className="text-sm font-medium md:text-xl">
                 Teaching Jobs
               </div>
