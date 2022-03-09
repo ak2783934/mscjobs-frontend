@@ -24,7 +24,12 @@ const PosterSection = () => {
       </div>
       <div className="w-full px-4 md:w-96">
         <div className="relative w-full h-24">
-          <Image alt="beware-of-scammer" src={"/beware.svg"} layout="fill" />
+          <Image
+            alt="beware-of-scammer"
+            className="z-0"
+            src={"/beware.svg"}
+            layout="fill"
+          />
         </div>
         <JobsByTopSkills />
         <UrgentJobRequirement />
