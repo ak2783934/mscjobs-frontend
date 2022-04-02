@@ -36,16 +36,16 @@ function RecentJobsCarousal() {
     },
     {
       imgUrl: "https://picsum.photos/200/300",
-      title: "Experience Faculty",
-      text1: "Connect with us @ 99/- year",
-      text2: "Experience should be more than 2 years.",
-      text3: "*Premium Assistance",
+      title: "Fresher Faculty/Other Jobs",
+      text1: "Connect with us @ 199/- year",
+      text2: "Your Resume will be on Top Priority",
+      text3: "*Job Guarantee",
     },
     {
       imgUrl: "https://picsum.photos/200/300",
-      title: "Experience Faculty",
-      text1: "Connect with us @ 99/- year",
-      text2: "Experience should be more than 2 years.",
+      title: "Institute/Organisation",
+      text1: "Connect with us @ 1000/- year",
+      text2: "*Premium Assistance ",
       text3: "*Premium Assistance",
     },
   ];
@@ -54,11 +54,6 @@ function RecentJobsCarousal() {
       <div className="w-auto px-6 pt-3 text-lg font-bold md:text-4xl">
         Premium Services
       </div>
-      <Link href="/premiumservices">
-        <div className="px-6 text-xs text-right text-blue-400 cursor-pointer md:px-10 md:text-sm ">
-          View all
-        </div>
-      </Link>
       <div className="flex flex-row justify-center">
         {jobs.map((job, index) => {
           return <CustomComp key={index} job={job} />;

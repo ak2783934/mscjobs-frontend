@@ -6,6 +6,7 @@ import PosterSection from "../components/PosterSection";
 import RecentJobsCarousal from "../components/RecentJobsCarousal";
 import HomeTutorCarousal from "../components/HomeTutorCarousal";
 import PremiumServicesCarousal from "../components/PremiumServicesCarousal";
+import AboutUs from "../components/AboutUs";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         <RecentJobsCarousal />
         <HomeTutorCarousal />
         <PremiumServicesCarousal />
+        <AboutUs />
       </div>
     </Layout>
   );

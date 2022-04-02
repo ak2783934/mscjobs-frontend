@@ -31,8 +31,8 @@ const PosterSection = () => {
             layout="fill"
           />
         </div>
-        <JobsByTopSkills />
         <UrgentJobRequirement />
+        <JobsByTopSkills />
       </div>
     </div>
   );

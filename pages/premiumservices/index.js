@@ -14,10 +14,22 @@ const PremiumServicePreview = ({ service }) => {
 };
 
 const index = () => {
-  const premiumService = {
+  const premiumService1 = {
     title: "Experience Faculty",
     text1: "Connect with us @ 99/- year",
     text2: "Experience should be more than 2 years.",
+    text3: "*Premium Assistance",
+  };
+  const premiumService2 = {
+    title: "Fresher Faculty/Other Jobs",
+    text1: "Connect with us @ 199/- year",
+    text2: "Your Resume will be on Top Priority",
+    text3: "*Job Guarantee",
+  };
+  const premiumService3 = {
+    title: "Institute/Organisation",
+    text1: "Connect with us @ 1000/- year",
+    text2: "*Premium Assistance ",
     text3: "*Premium Assistance",
   };
 
@@ -63,10 +75,9 @@ const index = () => {
               </div>
               <hr />
               <div className="mx-4">
-                <PremiumServicePreview service={premiumService} />
-                <PremiumServicePreview service={premiumService} />
-                <PremiumServicePreview service={premiumService} />
-                <PremiumServicePreview service={premiumService} />
+                <PremiumServicePreview service={premiumService1} />
+                <PremiumServicePreview service={premiumService2} />
+                <PremiumServicePreview service={premiumService3} />
               </div>
             </div>
           </div>
