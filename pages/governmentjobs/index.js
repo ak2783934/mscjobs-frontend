@@ -1,24 +1,66 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Layout from "../../layout";
 import Head from "next/head";
-import JobPreviewTiny from "../../components/JobPreviewTiny";
+import Link from "next/link";
 import SideBlock from "../../components/SideBlock";
 import BreadCrum from "../../components/BreadCrum";
+import { api } from "../api";
+
+const GovtJobsPreview = ({ job }) => {
+  return (
+    <div className="px-4 py-1 mx-2 mt-3 bg-gray-300 rounded-xl">
+      <div className="text-lg">{job.companyName}</div>
+      <hr className="border-black border-1" />
+      <div className="px-2 text-xs md:px-8">{job.jobDescription}</div>
+      <div className="px-2 text-xs md:px-8">
+        Last Date of Application : {job.lastDateOfApplication}
+      </div>
+      <div className="px-2 text-xs md:px-8">
+        No of vacancies : {job.noOfOpenings}
+      </div>
+      <Link
+        href={{
+          pathname: "/jobPreviewPage",
+          query: { jobid: job._id, jobType: job.jobType1 },
+        }}
+      >
+        <div className="text-right cursor-pointer text-tiny">Explore more</div>
+      </Link>
+    </div>
+  );
+};
 
 const Index = () => {
-  const job = {
-    companyName: "RBI India",
-    profile: "Clerk",
-    desc:
-      "Notification received from Jharkhand Gov. for JSSC 2022. Application start from 24th jan 2022",
-    lastDateOfApplication: "18th feb 2022",
-    vacancies: "123",
-    location: "Lucknow, UP",
-    experienceReq: "3-10 years",
-    type: "government/non government",
-    subType: "central governement/state government/teaching/others",
-  };
-  const [jobType, setjobType] = useState("state");
+  const [jobs, setJobs] = useState([]);
+
+  useEffect(() => {
+    api
+      .get("/jobs", {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+      .then((response) => {
+        setJobs(
+          response.data.jobs.filter((job) => job.jobType1 === "Government job")
+        );
+      })
+      .catch((error) => {
+        if (error.response) {
+          console.log(error.response.data);
+          console.log(error.response.status);
+          console.log(error.response.headers);
+        } else if (error.request) {
+          // The request was made but no response was received
+          console.log(error.request);
+        } else {
+          // Something happened in setting up the request that triggered an Error
+          console.log("Error", error.message);
+        }
+      });
+  }, []);
+
+  const [jobType, setjobType] = useState("state government");
   return (
     <Layout>
       <Head>
@@ -62,9 +104,9 @@ const Index = () => {
               <hr />
               <div className="grid grid-cols-2 text-xs text-center md:text-sm">
                 <button
-                  onClick={() => setjobType("state")}
+                  onClick={() => setjobType("state government")}
                   className={
-                    jobType === "state"
+                    jobType === "state government"
                       ? "py-1 font-medium border-t border-r border-gray-600 shadow hover:cursor-pointer"
                       : "py-1 font-medium border-t border-gray-600 hover:cursor-pointer"
                   }
@@ -72,9 +114,9 @@ const Index = () => {
                   State Government Jobs
                 </button>
                 <button
-                  onClick={() => setjobType("central")}
+                  onClick={() => setjobType("central government")}
                   className={
-                    jobType === "central"
+                    jobType === "central government"
                       ? "py-1 font-medium border-t border-r border-gray-600 shadow hover:cursor-pointer"
                       : "py-1 font-medium border-t border-gray-600 hover:cursor-pointer"
                   }
@@ -83,13 +125,11 @@ const Index = () => {
                 </button>
               </div>
               <div className="h-[400px] overflow-y-auto ">
-                <JobPreviewTiny job={job} />
-                <JobPreviewTiny job={job} />
-                <JobPreviewTiny job={job} />
-                <JobPreviewTiny job={job} />
-                <JobPreviewTiny job={job} />
-                <JobPreviewTiny job={job} />
-                <JobPreviewTiny job={job} />
+                {jobs
+                  .filter((job) => job.jobType2 === jobType)
+                  .map((job, index) => {
+                    return <GovtJobsPreview key={index} job={job} />;
+                  })}
               </div>
             </div>
           </div>

@@ -90,7 +90,7 @@ const Navbar = () => {
             </li>
             <li className="mx-8">
               <div className="flex flex-col block h-full py-2 md:p-2">
-                <Link href="/applyhere">
+                <Link href="/otherjobs">
                   <button className="h-auto px-4 py-1 my-1 text-sm text-white border-2 border-black rounded hover:underline hover:border-yellow-300">
                     APPLY HERE
                   </button>

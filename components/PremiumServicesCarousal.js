@@ -25,7 +25,7 @@ const CustomComp = ({ job }) => {
   );
 };
 
-function RecentJobsCarousal() {
+function PremiumServiceCarousal() {
   const jobs = [
     {
       imgUrl: "https://picsum.photos/200/300",
@@ -63,4 +63,4 @@ function RecentJobsCarousal() {
   );
 }
 
-export default RecentJobsCarousal;
+export default PremiumServiceCarousal;

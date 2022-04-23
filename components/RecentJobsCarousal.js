@@ -1,26 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Carousel } from "@trendyol-js/react-carousel";
+import { api } from "../pages/api";
 
-const CustomComp = ({ job }) => {
+const RecentJobComponent = (props) => {
+  // console.log(
+  //   _id + " " + companyName + " " + workExp + " " + workLoc + " " + jobRole
+  // );
+
+  // console.log(props);
+
   return (
     <div className="w-auto h-20 m-1 overflow-hidden bg-[#AEBAD2] md:h-40 md:m-4">
       <div className="px-1 pt-1 font-semibold md:pb-1 md:px-4 md:pt-2 text-[0.55rem] md:text-lg">
-        {job.companyName}
+        Fidelity.com
       </div>
       <div className="px-1 md:px-4 text-[#757171] text-[0.3rem] md:text-xs md:py-1">
-        {job.jobRole}
+        Intern
       </div>
       <div className="px-1 md:px-4 text-[0.4rem] md:text-sm font-semibold">
-        Experience: {job.experienceReq}
+        Experience: 5 years
       </div>
       <div className="px-1 text-[0.4rem] md:px-4 md:pt-1 md:text-sm font-semibold">
-        Location: {job.jobLocation}
+        Location: Ramgarh
       </div>
     </div>
   );
 };
-
 const RightArrow = () => {
   return (
     <div className="px-3 pt-6 md:px-10 md:pt-16">
@@ -64,6 +70,37 @@ const LeftArrow = () => {
 };
 
 function RecentJobsCarousal() {
+  // const [jobs, setJobs] = useState([]);
+  // var myJobs = [];
+  // useEffect(() => {
+  //   // myJobs.splice(0, myJobs.length)
+  //   api
+  //     .get("/jobs", {
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //     })
+  //     .then((response) => {
+  //       setJobs(response.data.jobs);
+  //       myJobs.push(response.data.jobs);
+  //       // console.log("Inside useEffect");
+  //       // console.log(myJobs);
+  //     })
+  //     .catch((error) => {
+  //       if (error.response) {
+  //         console.log(error.response.data);
+  //         console.log(error.response.status);
+  //         console.log(error.response.headers);
+  //       } else if (error.request) {
+  //         // The request was made but no response was received
+  //         console.log(error.request);
+  //       } else {
+  //         // Something happened in setting up the request that triggered an Error
+  //         console.log("Error", error.message);
+  //       }
+  //     });
+  // }, []);
+
   const jobs = [
     {
       companyName: "XYZ solutions",
@@ -114,6 +151,7 @@ function RecentJobsCarousal() {
       jobLocation: "Bangaluru",
     },
   ];
+
   return (
     <div className="w-auto h-auto mx-4 my-8 border-0 border-black rounded shadow-2xl md:mx-10 ">
       <div className="w-auto px-6 pt-3 text-lg font-bold md:text-4xl">
@@ -134,7 +172,20 @@ function RecentJobsCarousal() {
         rightArrow={<RightArrow />}
       >
         {jobs.map((job, index) => {
-          return <CustomComp key={index} job={job} />;
+          // const { _id, companyName, jobRole, workExp, workLoc } = job;
+          // console.log(
+          //   _id +
+          //     " " +
+          //     companyName +
+          //     " " +
+          //     jobRole +
+          //     " " +
+          //     workExp +
+          //     " " +
+          //     workLoc
+          // );
+          // console.log(myJobs);
+          return <RecentJobComponent key={index} job={job} />;
         })}
       </Carousel>
     </div>
