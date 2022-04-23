@@ -14,7 +14,7 @@ const OurServicePreview = ({ service }) => {
   );
 };
 
-const index = () => {
+const Index = () => {
   const ourServices = [
     {
       title: "Educational/Teaching Jobs",
@@ -70,8 +70,8 @@ const index = () => {
               </div>
               <hr />
               <div className="mx-4">
-                {ourServices.map((ourService, index) => {
-                  return <OurServicePreview key={index} service={ourService} />;
+                {ourServices.map((ourService, Index) => {
+                  return <OurServicePreview key={Index} service={ourService} />;
                 })}
               </div>
             </div>
@@ -82,4 +82,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

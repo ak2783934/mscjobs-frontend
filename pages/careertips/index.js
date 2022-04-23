@@ -4,7 +4,7 @@ import Link from "next/link";
 import SideBlock from "../../components/SideBlock";
 import BreadCrum from "../../components/BreadCrum";
 
-const index = () => {
+const Index = () => {
   return (
     <Layout>
       <Head>
@@ -112,4 +112,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

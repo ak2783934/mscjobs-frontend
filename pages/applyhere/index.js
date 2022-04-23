@@ -6,7 +6,7 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import { api } from "../api";
 
-const index = () => {
+const Index = () => {
   const [queryData, setQueryData] = useState({});
   useEffect(() => {
     const data = Router.query;
@@ -211,4 +211,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

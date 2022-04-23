@@ -30,7 +30,7 @@ const OtherJobsPreview = ({ job }) => {
   );
 };
 
-const index = () => {
+const Index = () => {
   const [jobs, setJobs] = useState([]);
 
   useEffect(() => {
@@ -109,8 +109,8 @@ const index = () => {
               </div>
               <hr />
               <div className="h-[400px] overflow-y-auto ">
-                {jobs.map((job, index) => {
-                  return <OtherJobsPreview key={index} job={job} />;
+                {jobs.map((job, Index) => {
+                  return <OtherJobsPreview key={Index} job={job} />;
                 })}
               </div>
             </div>
@@ -121,4 +121,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

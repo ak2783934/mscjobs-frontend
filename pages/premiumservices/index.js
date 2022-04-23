@@ -13,7 +13,7 @@ const PremiumServicePreview = ({ service }) => {
   );
 };
 
-const index = () => {
+const Index = () => {
   const premiumService1 = {
     title: "Experience Faculty",
     text1: "Connect with us @ 99/- year",
@@ -87,4 +87,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

@@ -4,7 +4,7 @@ import JobPreviewTiny from "../../components/JobPreviewTiny";
 import SideBlock from "../../components/SideBlock";
 import BreadCrum from "../../components/BreadCrum";
 
-const index = () => {
+const Index = () => {
   const job = {
     companyName: "Akash",
     profile: "Chemistry Teacher",
@@ -71,4 +71,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

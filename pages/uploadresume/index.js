@@ -1,7 +1,7 @@
 import Layout from "../../layout";
 import Head from "next/head";
 
-const index = () => {
+const Index = () => {
   return (
     <Layout>
       <Head>
@@ -56,4 +56,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
