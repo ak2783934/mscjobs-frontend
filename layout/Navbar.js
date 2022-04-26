@@ -48,42 +48,42 @@ const Navbar = () => {
           <ul className="text-sm text-center text-white lg:text-base md:text-sm bg-navbar md:flex md:justify-between md:pt-0">
             <li>
               <Link href="/governmentjobs">
-                <a className="block h-full py-2 md:p-2 lg:p-4 md:py-4 hover:underline">
+                <a className="block h-full py-2 md:p-2 lg:py-4 lg:px-2 md:py-4 hover:underline">
                   GOVERNMENT JOBS
                 </a>
               </Link>
             </li>
             <li>
               <Link href="/teachingjobs">
-                <a className="block h-full py-2 md:p-2 lg:p-4 md:py-4 hover:underline">
+                <a className="block h-full py-2 md:p-2 lg:py-4 lg:px-2 md:py-4 hover:underline">
                   TEACHING JOBS
                 </a>
               </Link>
             </li>
             <li>
               <Link href="/otherjobs">
-                <a className="block h-full py-2 md:p-2 lg:p-4 md:py-4 hover:underline">
+                <a className="block h-full py-2 md:p-2 lg:py-4 lg:px-2 md:py-4 hover:underline">
                   OTHER JOBS
                 </a>
               </Link>
             </li>
             <li>
               <Link href="/careertips">
-                <a className="block h-full py-2 md:p-2 lg:p-4 md:py-4 hover:underline">
+                <a className="block h-full py-2 md:p-2 lg:py-4 lg:px-2 md:py-4 hover:underline">
                   CAREER TIPS
                 </a>
               </Link>
             </li>
             <li>
               <Link href="/#aboutus">
-                <a className="block h-full py-2 md:p-2 lg:p-4 md:py-4 hover:underline">
+                <a className="block h-full py-2 md:p-2 lg:py-4 lg:px-2 md:py-4 hover:underline">
                   ABOUT US
                 </a>
               </Link>
             </li>
             <li>
               <Link href="/studymaterials">
-                <a className="block h-full py-2 md:p-2 lg:p-4 md:py-4 hover:underline">
+                <a className="block h-full py-2 md:p-2 lg:py-4 lg:px-2 md:py-4 hover:underline">
                   STUDY MATERIAL
                 </a>
               </Link>

@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from "react";
 import Layout from "../layout";
 import Head from "next/head";
 import BGWithSearch from "../components/BGWithSearch";
@@ -7,8 +8,36 @@ import RecentJobsCarousal from "../components/RecentJobsCarousal";
 import HomeTutorCarousal from "../components/HomeTutorCarousal";
 import PremiumServicesCarousal from "../components/PremiumServicesCarousal";
 import AboutUs from "../components/AboutUs";
+import { api } from "./api";
 
 export default function Home() {
+  const [jobs, setJobs] = useState([]);
+  useEffect(() => {
+    api
+      .get("/jobs", {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+      .then((response) => {
+        setJobs(response.data.jobs.reverse());
+        console.log(response.data.jobs);
+      })
+      .catch((error) => {
+        if (error.response) {
+          console.log(error.response.data);
+          console.log(error.response.status);
+          console.log(error.response.headers);
+        } else if (error.request) {
+          // The request was made but no response was received
+          console.log(error.request);
+        } else {
+          // Something happened in setting up the request that triggered an Error
+          console.log("Error", error.message);
+        }
+      });
+  }, []);
+
   return (
     <Layout>
       <div className="w-full">
@@ -25,9 +54,9 @@ export default function Home() {
         </Head>
         <BGWithSearch />
         <CompanyCarousal />
-        <PosterSection />
-        <RecentJobsCarousal />
-        <HomeTutorCarousal />
+        <PosterSection jobs={jobs} />
+        <RecentJobsCarousal jobs={jobs} />
+        <HomeTutorCarousal jobs={jobs} />
         <PremiumServicesCarousal />
         <AboutUs />
       </div>

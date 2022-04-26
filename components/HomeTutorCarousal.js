@@ -12,10 +12,10 @@ const CustomComp = ({ job }) => {
         {job.jobRole}
       </div>
       <div className="px-1 md:px-4 text-[0.4rem] md:text-sm font-semibold">
-        Experience: {job.experienceReq}
+        Experience: {job.workExp}
       </div>
       <div className="px-1 text-[0.4rem] md:px-4 md:pt-1 md:text-sm font-semibold">
-        Location: {job.jobLocation}
+        Location: {job.workLoc}
       </div>
     </div>
   );
@@ -63,57 +63,57 @@ const LeftArrow = () => {
   );
 };
 
-function HomeTutorCarousal() {
-  const jobs = [
-    {
-      companyName: "XYZ solutions",
-      jobRole: "SDE I",
-      experienceReq: "3-10 years",
-      jobLocation: "Bangaluru",
-    },
-    {
-      companyName: "Avinash solutions",
-      jobRole: "SDE I",
-      experienceReq: "3-10 years",
-      jobLocation: "Bangaluru",
-    },
-    {
-      companyName: "Mayank solutions",
-      jobRole: "SDE I",
-      experienceReq: "3-10 years",
-      jobLocation: "Bangaluru",
-    },
-    {
-      companyName: "Rajesh solutions",
-      jobRole: "SDE I",
-      experienceReq: "3-10 years",
-      jobLocation: "Bangaluru",
-    },
-    {
-      companyName: "Shivam solutions",
-      jobRole: "SDE I",
-      experienceReq: "3-10 years",
-      jobLocation: "Bangaluru",
-    },
-    {
-      companyName: "Vishnu solutions",
-      jobRole: "SDE I",
-      experienceReq: "3-10 years",
-      jobLocation: "Bangaluru",
-    },
-    {
-      companyName: "Punam solutions",
-      jobRole: "SDE I",
-      experienceReq: "3-10 years",
-      jobLocation: "Bangaluru",
-    },
-    {
-      companyName: "Jadav solutions",
-      jobRole: "SDE I",
-      experienceReq: "3-10 years",
-      jobLocation: "Bangaluru",
-    },
-  ];
+function HomeTutorCarousal({ jobs }) {
+  // const jobs = [
+  //   {
+  //     companyName: "XYZ solutions",
+  //     jobRole: "SDE I",
+  //     experienceReq: "3-10 years",
+  //     jobLocation: "Bangaluru",
+  //   },
+  //   {
+  //     companyName: "Avinash solutions",
+  //     jobRole: "SDE I",
+  //     experienceReq: "3-10 years",
+  //     jobLocation: "Bangaluru",
+  //   },
+  //   {
+  //     companyName: "Mayank solutions",
+  //     jobRole: "SDE I",
+  //     experienceReq: "3-10 years",
+  //     jobLocation: "Bangaluru",
+  //   },
+  //   {
+  //     companyName: "Rajesh solutions",
+  //     jobRole: "SDE I",
+  //     experienceReq: "3-10 years",
+  //     jobLocation: "Bangaluru",
+  //   },
+  //   {
+  //     companyName: "Shivam solutions",
+  //     jobRole: "SDE I",
+  //     experienceReq: "3-10 years",
+  //     jobLocation: "Bangaluru",
+  //   },
+  //   {
+  //     companyName: "Vishnu solutions",
+  //     jobRole: "SDE I",
+  //     experienceReq: "3-10 years",
+  //     jobLocation: "Bangaluru",
+  //   },
+  //   {
+  //     companyName: "Punam solutions",
+  //     jobRole: "SDE I",
+  //     experienceReq: "3-10 years",
+  //     jobLocation: "Bangaluru",
+  //   },
+  //   {
+  //     companyName: "Jadav solutions",
+  //     jobRole: "SDE I",
+  //     experienceReq: "3-10 years",
+  //     jobLocation: "Bangaluru",
+  //   },
+  // ];
   return (
     <div className="w-auto h-auto mx-4 my-8 border-0 border-black rounded shadow-2xl md:mx-10 ">
       <div className="w-auto px-6 pt-3 text-lg font-bold md:text-4xl">

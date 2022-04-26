@@ -41,7 +41,7 @@ const Index = () => {
         },
       })
       .then((response) => {
-        setJobs(response.data.jobs);
+        setJobs(response.data.jobs.reverse());
       })
       .catch((error) => {
         if (error.response) {

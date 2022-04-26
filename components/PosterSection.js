@@ -4,7 +4,7 @@ import Image from "next/image";
 import UrgentJobRequirement from "./UrgentJobRequirement";
 import JobsByTopSkills from "./JobsByTopSkills";
 
-const PosterSection = () => {
+const PosterSection = ({ jobs }) => {
   return (
     <div className="flex flex-row mx-4 md:mx-10">
       <div className="grow">
@@ -18,7 +18,7 @@ const PosterSection = () => {
             <Image alt="work-with-us" src={"/work-with-us.svg"} layout="fill" />
           </Link>
         </div>
-        <div className="relative my-1 w-full md:h-100">
+        <div className="relative w-full my-1 md:h-100">
           <Image alt="girl-pic" src={"/girl-pic.svg"} layout="fill" />
         </div>
       </div>
@@ -31,7 +31,7 @@ const PosterSection = () => {
             layout="fill"
           />
         </div>
-        <UrgentJobRequirement />
+        <UrgentJobRequirement jobs={jobs} />
         <JobsByTopSkills />
       </div>
     </div>

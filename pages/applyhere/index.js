@@ -10,7 +10,7 @@ const Index = () => {
   const [queryData, setQueryData] = useState({});
   useEffect(() => {
     const data = Router.query;
-    // console.log(data);
+    console.log(data);
     setQueryData(data);
   }, []);
 

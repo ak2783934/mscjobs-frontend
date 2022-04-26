@@ -3,26 +3,21 @@ import Link from "next/link";
 import { Carousel } from "@trendyol-js/react-carousel";
 import { api } from "../pages/api";
 
-const RecentJobComponent = (props) => {
-  // console.log(
-  //   _id + " " + companyName + " " + workExp + " " + workLoc + " " + jobRole
-  // );
-
-  // console.log(props);
-
+const RecentJobComponent = ({ job }) => {
+  console.log(job);
   return (
     <div className="w-auto h-20 m-1 overflow-hidden bg-[#AEBAD2] md:h-40 md:m-4">
       <div className="px-1 pt-1 font-semibold md:pb-1 md:px-4 md:pt-2 text-[0.55rem] md:text-lg">
-        Fidelity.com
+        {job.companyName}
       </div>
       <div className="px-1 md:px-4 text-[#757171] text-[0.3rem] md:text-xs md:py-1">
-        Intern
+        {job.jobRole}
       </div>
       <div className="px-1 md:px-4 text-[0.4rem] md:text-sm font-semibold">
-        Experience: 5 years
+        Experience: {job.workExp}
       </div>
       <div className="px-1 text-[0.4rem] md:px-4 md:pt-1 md:text-sm font-semibold">
-        Location: Ramgarh
+        Location: {job.workLoc}
       </div>
     </div>
   );
@@ -69,88 +64,57 @@ const LeftArrow = () => {
   );
 };
 
-function RecentJobsCarousal() {
-  // const [jobs, setJobs] = useState([]);
-  // var myJobs = [];
-  // useEffect(() => {
-  //   // myJobs.splice(0, myJobs.length)
-  //   api
-  //     .get("/jobs", {
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //     })
-  //     .then((response) => {
-  //       setJobs(response.data.jobs);
-  //       myJobs.push(response.data.jobs);
-  //       // console.log("Inside useEffect");
-  //       // console.log(myJobs);
-  //     })
-  //     .catch((error) => {
-  //       if (error.response) {
-  //         console.log(error.response.data);
-  //         console.log(error.response.status);
-  //         console.log(error.response.headers);
-  //       } else if (error.request) {
-  //         // The request was made but no response was received
-  //         console.log(error.request);
-  //       } else {
-  //         // Something happened in setting up the request that triggered an Error
-  //         console.log("Error", error.message);
-  //       }
-  //     });
-  // }, []);
-
-  const jobs = [
-    {
-      companyName: "XYZ solutions",
-      jobRole: "SDE I",
-      experienceReq: "3-10 years",
-      jobLocation: "Bangaluru",
-    },
-    {
-      companyName: "Avinash solutions",
-      jobRole: "SDE I",
-      experienceReq: "3-10 years",
-      jobLocation: "Bangaluru",
-    },
-    {
-      companyName: "Mayank solutions",
-      jobRole: "SDE I",
-      experienceReq: "3-10 years",
-      jobLocation: "Bangaluru",
-    },
-    {
-      companyName: "Rajesh solutions",
-      jobRole: "SDE I",
-      experienceReq: "3-10 years",
-      jobLocation: "Bangaluru",
-    },
-    {
-      companyName: "Shivam solutions",
-      jobRole: "SDE I",
-      experienceReq: "3-10 years",
-      jobLocation: "Bangaluru",
-    },
-    {
-      companyName: "Vishnu solutions",
-      jobRole: "SDE I",
-      experienceReq: "3-10 years",
-      jobLocation: "Bangaluru",
-    },
-    {
-      companyName: "Punam solutions",
-      jobRole: "SDE I",
-      experienceReq: "3-10 years",
-      jobLocation: "Bangaluru",
-    },
-    {
-      companyName: "Jadav solutions",
-      jobRole: "SDE I",
-      experienceReq: "3-10 years",
-      jobLocation: "Bangaluru",
-    },
-  ];
+function RecentJobsCarousal({ jobs }) {
+  // const jobs = [
+  //   {
+  //     companyName: "XYZ solutions",
+  //     jobRole: "SDE I",
+  //     experienceReq: "3-10 years",
+  //     jobLocation: "Bangaluru",
+  //   },
+  //   {
+  //     companyName: "Avinash solutions",
+  //     jobRole: "SDE I",
+  //     experienceReq: "3-10 years",
+  //     jobLocation: "Bangaluru",
+  //   },
+  //   {
+  //     companyName: "Mayank solutions",
+  //     jobRole: "SDE I",
+  //     experienceReq: "3-10 years",
+  //     jobLocation: "Bangaluru",
+  //   },
+  //   {
+  //     companyName: "Rajesh solutions",
+  //     jobRole: "SDE I",
+  //     experienceReq: "3-10 years",
+  //     jobLocation: "Bangaluru",
+  //   },
+  //   {
+  //     companyName: "Shivam solutions",
+  //     jobRole: "SDE I",
+  //     experienceReq: "3-10 years",
+  //     jobLocation: "Bangaluru",
+  //   },
+  //   {
+  //     companyName: "Vishnu solutions",
+  //     jobRole: "SDE I",
+  //     experienceReq: "3-10 years",
+  //     jobLocation: "Bangaluru",
+  //   },
+  //   {
+  //     companyName: "Punam solutions",
+  //     jobRole: "SDE I",
+  //     experienceReq: "3-10 years",
+  //     jobLocation: "Bangaluru",
+  //   },
+  //   {
+  //     companyName: "Jadav solutions",
+  //     jobRole: "SDE I",
+  //     experienceReq: "3-10 years",
+  //     jobLocation: "Bangaluru",
+  //   },
+  // ];
 
   return (
     <div className="w-auto h-auto mx-4 my-8 border-0 border-black rounded shadow-2xl md:mx-10 ">
@@ -171,22 +135,9 @@ function RecentJobsCarousal() {
         leftArrow={<LeftArrow />}
         rightArrow={<RightArrow />}
       >
-        {jobs.map((job, index) => {
-          // const { _id, companyName, jobRole, workExp, workLoc } = job;
-          // console.log(
-          //   _id +
-          //     " " +
-          //     companyName +
-          //     " " +
-          //     jobRole +
-          //     " " +
-          //     workExp +
-          //     " " +
-          //     workLoc
-          // );
-          // console.log(myJobs);
-          return <RecentJobComponent key={index} job={job} />;
-        })}
+        {jobs.map((job, index) => (
+          <RecentJobComponent key={index} job={job} />
+        ))}
       </Carousel>
     </div>
   );
