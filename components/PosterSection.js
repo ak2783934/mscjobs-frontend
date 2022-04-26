@@ -14,7 +14,7 @@ const PosterSection = ({ jobs }) => {
           </Link>
         </div>
         <div className="relative w-full my-1 cursor-pointer md:h-93">
-          <Link href="/applyhere">
+          <Link href="/recentjobs">
             <Image alt="work-with-us" src={"/work-with-us.svg"} layout="fill" />
           </Link>
         </div>
