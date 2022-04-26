@@ -17,8 +17,8 @@ const Footer = () => {
 
               <div className="w-2/3 pl-3 text-xs">
                 <div className="font-bold">Maa Saraswati Consultancy</div>
-                <div> G-231, Third Floor, Techno Garden, Banglore</div>
-                <div> kharnataka- 751019</div>
+                <div> 2nd Floor, Golden Palace, Bye Pass Road, Chas</div>
+                <div>Near ICICI/ Yes Bank, BOKARO, JHARKHAND</div>
               </div>
             </div>
             <div className="flex flex-row">
@@ -28,8 +28,8 @@ const Footer = () => {
 
               <div className="w-auto pl-3 text-xs sm:w-3/4">
                 <div>Phone: </div>
-                <a href="tel:6370324756">7004237947</a>
-                <a href="tel:6371809622">, 8102457542</a>
+                <a href="tel:6370324756">+91-7004704332</a>
+                <a href="tel:6371809622">,  +91-7004237947</a>
               </div>
             </div>
             <div className="flex flex-row">
@@ -39,7 +39,8 @@ const Footer = () => {
 
               <div className="w-auto pl-3 text-xs sm:w-3/4">
                 <a href="mailto:www.themiracletutorial@gmail.com">
-                  Email: www.mscjobs@gmail.com{" "}
+                  mscjobs@gmail.com
+                  msfacultyprovider@gmail.com
                 </a>
               </div>
             </div>

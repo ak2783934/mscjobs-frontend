@@ -64,14 +64,14 @@ const LeftArrow = () => {
 const CompanyCarousal = () => {
   const size = useWindowSize();
   const imgArray = [
-    "https://res.cloudinary.com/dlb1ct3qc/image/upload/v1643478601/c8_y7n21s.jpg",
-    "https://res.cloudinary.com/dlb1ct3qc/image/upload/v1643478601/c1_yqwjxc.png",
-    "https://res.cloudinary.com/dlb1ct3qc/image/upload/v1643478601/c2_zrfrqx.png",
-    "https://res.cloudinary.com/dlb1ct3qc/image/upload/v1643478601/c7_rkrb7l.png",
-    "https://res.cloudinary.com/dlb1ct3qc/image/upload/v1643478601/c5_txsc9q.png",
-    "https://res.cloudinary.com/dlb1ct3qc/image/upload/v1643478601/c6_lbkd2l.png",
-    "https://res.cloudinary.com/dlb1ct3qc/image/upload/v1643478601/c3_y8hwm7.png",
-    "https://res.cloudinary.com/dlb1ct3qc/image/upload/v1643478601/c4_me9fop.png",
+    "https://res.cloudinary.com/dlb1ct3qc/image/upload/v1650809979/WhatsApp_Image_2022-04-24_at_3.56.38_PM_1_tlcvlt.jpg",
+    "https://res.cloudinary.com/dlb1ct3qc/image/upload/v1650809979/WhatsApp_Image_2022-04-24_at_3.56.38_PM_3_rq3rkh.jpg",
+    "https://res.cloudinary.com/dlb1ct3qc/image/upload/v1650809979/WhatsApp_Image_2022-04-24_at_3.56.39_PM_2_vejhtj.jpg",
+    "https://res.cloudinary.com/dlb1ct3qc/image/upload/v1650809979/WhatsApp_Image_2022-04-24_at_3.56.39_PM_1_mvtz3u.jpg",
+    "https://res.cloudinary.com/dlb1ct3qc/image/upload/v1650809979/WhatsApp_Image_2022-04-24_at_3.56.37_PM_1_kvkgur.jpg",
+    "https://res.cloudinary.com/dlb1ct3qc/image/upload/v1650809978/WhatsApp_Image_2022-04-24_at_3.56.40_PM_x5ywfs.jpg",
+    "https://res.cloudinary.com/dlb1ct3qc/image/upload/v1650809979/WhatsApp_Image_2022-04-24_at_3.56.39_PM_2_vejhtj.jpg",
+    "https://res.cloudinary.com/dlb1ct3qc/image/upload/v1650809979/WhatsApp_Image_2022-04-24_at_3.56.38_PM_3_rq3rkh.jpg",
   ];
   return (
     <div className="w-auto h-auto mx-4 my-8 border-0 border-black rounded shadow-2xl md:mx-10 ">

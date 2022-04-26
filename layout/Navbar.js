@@ -61,6 +61,13 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
+              <Link href="/otherjobs">
+                <a className="block h-full py-2 md:p-2 lg:p-4 md:py-4 hover:underline">
+                  OTHER JOBS
+                </a>
+              </Link>
+            </li>
+            <li>
               <Link href="/careertips">
                 <a className="block h-full py-2 md:p-2 lg:p-4 md:py-4 hover:underline">
                   CAREER TIPS

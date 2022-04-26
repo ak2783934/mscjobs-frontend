@@ -28,21 +28,24 @@ const CustomComp = ({ job }) => {
 function PremiumServiceCarousal() {
   const jobs = [
     {
-      imgUrl: "https://picsum.photos/200/300",
+      imgUrl:
+        "https://res.cloudinary.com/dlb1ct3qc/image/upload/v1643478601/c3_y8hwm7.png",
       title: "Experience Faculty",
       text1: "Connect with us @ 99/- year",
       text2: "Experience should be more than 2 years.",
       text3: "*Premium Assistance",
     },
     {
-      imgUrl: "https://picsum.photos/200/300",
+      imgUrl:
+        "https://res.cloudinary.com/dlb1ct3qc/image/upload/v1643478601/c3_y8hwm7.png",
       title: "Fresher Faculty/Other Jobs",
       text1: "Connect with us @ 199/- year",
       text2: "Your Resume will be on Top Priority",
       text3: "*Job Guarantee",
     },
     {
-      imgUrl: "https://picsum.photos/200/300",
+      imgUrl:
+        "https://res.cloudinary.com/dlb1ct3qc/image/upload/v1643478601/c3_y8hwm7.png",
       title: "Institute/Organisation",
       text1: "Connect with us @ 1000/- year",
       text2: "*Premium Assistance ",

@@ -55,7 +55,7 @@ const Index = () => {
         })
         .then((response) => {
           console.log(response);
-          alert("Job Created Successfully");
+          alert("Applied successfully");
           resetForm();
         })
         .catch((error) => {
