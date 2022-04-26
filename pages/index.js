@@ -56,7 +56,9 @@ export default function Home() {
         <CompanyCarousal />
         <PosterSection jobs={jobs} />
         <RecentJobsCarousal jobs={jobs} />
-        <HomeTutorCarousal jobs={jobs} />
+        <HomeTutorCarousal
+          jobs={jobs.filter((job) => job.jobType2 === "Home Tutor jobs")}
+        />
         <PremiumServicesCarousal />
         <AboutUs />
       </div>

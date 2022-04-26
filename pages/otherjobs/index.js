@@ -41,7 +41,11 @@ const Index = () => {
         },
       })
       .then((response) => {
-        setJobs(response.data.jobs.reverse());
+        setJobs(
+          response.data.jobs
+            .reverse()
+            .filter((job) => job.jobType2 === "Other jobs")
+        );
       })
       .catch((error) => {
         if (error.response) {
