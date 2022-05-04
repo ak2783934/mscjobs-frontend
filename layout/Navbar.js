@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { api } from "../pages/api";
 
 const Navbar = () => {
   const myClass = [
@@ -7,6 +8,33 @@ const Navbar = () => {
     "block w-full  md:items-center md:w-auto md:flex",
   ];
   const [cnt, setCnt] = useState(0);
+  const [marqueeMsg, setMarqueeMsg] = useState("Site Under Construction");
+  useEffect(() => {
+    api
+      .get("/marqueemsg", {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+      .then((response) => {
+        console.log(response.data.msg);
+        setMarqueeMsg(response.data.msg);
+      })
+      .catch((error) => {
+        if (error.response) {
+          console.log(error.response.data);
+          console.log(error.response.status);
+          console.log(error.response.headers);
+        } else if (error.request) {
+          // The request was made but no response was received
+          console.log(error.request);
+        } else {
+          // Something happened in setting up the request that triggered an Error
+          console.log("Error", error.message);
+        }
+      });
+  }, []);
+
   return (
     <header>
       <nav className="flex flex-wrap items-center justify-between w-full py-2 md:px-12 bg-navbar">
@@ -113,14 +141,15 @@ const Navbar = () => {
         </div>
       </nav>
       <div className="flex flex-row">
-        <marquee className="text-xl text-red-800">
-          Site under construction
-        </marquee>
-        <marquee className="text-xl text-red-800">
-          Site under construction
-        </marquee>
-        <marquee className="text-xl text-red-800">
-          Site under construction
+        <marquee
+          behavior="scroll"
+          scrollamount="10"
+          width="100%"
+          direction="left"
+          height="25px"
+          className="text-xl text-red-600"
+        >
+          {marqueeMsg}
         </marquee>
       </div>
     </header>

@@ -6,7 +6,7 @@ const BGWithSearch = () => {
   return (
     <div
       style={{
-        backgroundImage: `url(/bgimage.svg)`,
+        backgroundImage: `url(/bgimage.png)`,
         backgroundSize: "contain",
         backgroundRepeat: "no-repeat",
         backgroundColor: "#008CF3",

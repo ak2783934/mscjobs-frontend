@@ -29,7 +29,7 @@ const Footer = () => {
               <div className="w-auto pl-3 text-xs sm:w-3/4">
                 <div>Phone: </div>
                 <a href="tel:6370324756">+91-7004704332</a>
-                <a href="tel:6371809622">,  +91-7004237947</a>
+                <a href="tel:6371809622">, +91-7004237947</a>
               </div>
             </div>
             <div className="flex flex-row">
@@ -38,8 +38,8 @@ const Footer = () => {
               </div>
 
               <div className="w-auto pl-3 text-xs sm:w-3/4">
-                <a href="mailto:www.themiracletutorial@gmail.com">
-                  mscjobs@gmail.com
+                <a href="mailto:mscjobs@gmail.com">mscjobs@gmail.com, </a>
+                <a href="mailto:msfacultyprovider@gmail.com">
                   msfacultyprovider@gmail.com
                 </a>
               </div>

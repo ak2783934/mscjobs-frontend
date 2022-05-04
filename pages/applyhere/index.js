@@ -55,7 +55,9 @@ const Index = () => {
         })
         .then((response) => {
           console.log(response);
-          alert("Applied successfully");
+          alert(
+            "Applied successfully, you'll soon recieve an email confirming your application"
+          );
           resetForm();
         })
         .catch((error) => {
