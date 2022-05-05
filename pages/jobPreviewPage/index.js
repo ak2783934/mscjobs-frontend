@@ -25,6 +25,17 @@ const Index = () => {
       });
   }, []);
 
+  const getDate = (date) => {
+    const postDate = new Date(date);
+    const dateStr =
+      postDate.getDay() +
+      "-" +
+      postDate.getMonth() +
+      "-" +
+      postDate.getFullYear();
+    return dateStr;
+  };
+
   return (
     <Layout>
       <Head>
@@ -77,7 +88,7 @@ const Index = () => {
                   />
                 </span>
                 <span className="mx-1 text-tiny md:text-sm">
-                  {jobDetails.createdAt}
+                  {getDate(jobDetails.createdAt)}
                 </span>
                 <span className="mx-1">
                   <img

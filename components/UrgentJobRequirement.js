@@ -1,6 +1,17 @@
 import React from "react";
 import Link from "next/link";
 
+const getDate = (date) => {
+  const postDate = new Date(date);
+  const dateStr =
+    postDate.getDay() +
+    "-" +
+    postDate.getMonth() +
+    "-" +
+    postDate.getFullYear();
+  return dateStr;
+};
+
 const UrgentJobRequirement = ({ jobs }) => {
   return (
     <div className="bg-[#F8F7F7] h-auto my-2 rounded pb-3">
@@ -18,7 +29,7 @@ const UrgentJobRequirement = ({ jobs }) => {
               {jobs[0]?.companyName}
             </div>
             <div className="my-2 text-xs font-thin md:text-sm">
-              <span>Posted: {jobs[0]?.createdAt}</span>
+              <span>Posted: {getDate(jobs[0]?.createdAt)}</span>
               <span className="ml-10">{jobs[0]?.jobRole}</span>
             </div>
             <div className="mx-4 my-2 text-sm">
@@ -40,7 +51,7 @@ const UrgentJobRequirement = ({ jobs }) => {
               {jobs[1]?.companyName}
             </div>
             <div className="my-2 text-xs font-thin md:text-sm">
-              <span>Posted: {jobs[1]?.createdAt}</span>
+              <span>Posted: {getDate(jobs[1]?.createdAt)}</span>
               <span className="ml-10">{jobs[0]?.jobRole}</span>
             </div>
             <div className="mx-4 my-2 text-sm">
