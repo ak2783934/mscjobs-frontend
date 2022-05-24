@@ -76,7 +76,7 @@ const Footer = () => {
           </div>
           <div className="relative h-[175px] max-w-[400px] mx-auto sm:max-w-[300px] mt-7">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3743.2779761837314!2d85.78049295068335!3d20.247303119303442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a7c6e9c4d4d1%3A0x1c4d1209e0db1a5d!2sDumduma%20Chhak!5e0!3m2!1sen!2sin!4v1645901124881!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.222290503735!2d86.17192299999999!3d23.632209000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f423fccff51fad%3A0x98764110f122b2be!2sICICI%20Bank%20Chas-Branch%20%26%20ATM!5e0!3m2!1sen!2sin!4v1653386901466!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: "0" }}

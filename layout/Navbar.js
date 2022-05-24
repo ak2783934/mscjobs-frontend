@@ -146,8 +146,8 @@ const Navbar = () => {
           scrollamount="10"
           width="100%"
           direction="left"
-          height="25px"
-          className="text-xl text-red-600"
+          height="auto"
+          className="text-xl text-red-600 "
         >
           {marqueeMsg}
         </marquee>
