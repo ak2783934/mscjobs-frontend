@@ -140,20 +140,22 @@ const Index = () => {
                     {jobDetails.additionalNotes}
                   </div>
                 </div>
-                <div className="my-2">
-                  <span className="font-semibold ">Attachments: </span>
-                  <span className="cursor-pointer">
-                    <Link
-                      href={`${process.env.NEXT_PUBLIC_BASE_URL}/fileinfo/${jobDetails.attachments}`}
-                    >
-                      <img
-                        src="/attachment-logo.svg"
-                        alt="attachment-logo"
-                        className="h-[13px] w-[13px] inline mx-1"
-                      />
-                    </Link>
-                  </span>
-                </div>
+                {jobDetails.attachments && (
+                  <div className="my-2">
+                    <span className="font-semibold ">Attachments: </span>
+                    <span className="cursor-pointer">
+                      <Link
+                        href={`${process.env.NEXT_PUBLIC_BASE_URL}/fileinfo/${jobDetails.attachments}`}
+                      >
+                        <img
+                          src="/attachment-logo.svg"
+                          alt="attachment-logo"
+                          className="h-[13px] w-[13px] inline mx-1"
+                        />
+                      </Link>
+                    </span>
+                  </div>
+                )}
               </div>
               <Link
                 href={{
