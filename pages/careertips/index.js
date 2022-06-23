@@ -3,8 +3,51 @@ import Head from "next/head";
 import Link from "next/link";
 import SideBlock from "../../components/SideBlock";
 import BreadCrum from "../../components/BreadCrum";
+import { api } from "../api";
+import * as Yup from "yup";
+import { useFormik } from "formik";
 
 const Index = () => {
+  const formik = useFormik({
+    initialValues: {
+      name: "",
+      emailId: "",
+      contactNo: "",
+      query: "",
+    },
+    validationSchema: Yup.object().shape({
+      name: Yup.string().min(3, "Too short").required("required"),
+      emailId: Yup.string().email("Must be a valid email").required("required"),
+      contactNo: Yup.string().required("required"),
+      query: Yup.string().min(3, "Too short").required("required"),
+    }),
+    onSubmit: async (values, { resetForm }) => {
+      await api
+        .post("/careertips/create", values, {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        })
+        .then((response) => {
+          console.log(response);
+          alert("Form submitted successfully");
+          resetForm();
+        })
+        .catch((error) => {
+          if (error.response) {
+            console.log(error.response.data);
+            console.log(error.response.status);
+            console.log(error.response.headers);
+          } else if (error.request) {
+            // The request was made but no response was received
+            console.log(error.request);
+          } else {
+            // Something happened in setting up the request that triggered an Error
+            console.log("Error", error.message);
+          }
+        });
+    },
+  });
   return (
     <Layout>
       <Head>
@@ -69,37 +112,74 @@ const Index = () => {
                 </div>
                 <hr className="border-red-600 border-t-1" />
                 <div className="my-2">
-                  <form>
+                  <form onSubmit={formik.handleSubmit}>
                     <div className="text-lg font-bold"> Name</div>
                     <input
                       name="name"
                       type="text"
+                      id="name"
                       placeholder="Your Name"
                       className="border border-black w-[80%] md:w-[60%] rounded text-sm p-2 my-1"
+                      onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
+                      value={formik.values.name}
                     />
+                    {formik.touched.name && formik.errors.name ? (
+                      <div>{formik.errors.name}</div>
+                    ) : null}
                     <div className="text-lg font-bold"> Contact No</div>
                     <input
-                      name="ContactNo"
+                      name="contactNo"
                       type="text"
+                      id="contactNo"
                       placeholder="Contact No"
                       className="border border-black w-[80%] md:w-[60%] rounded text-sm p-2 my-1"
+                      onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
+                      value={formik.values.contactNo}
                     />
+                    {formik.touched.contactNo && formik.errors.contactNo ? (
+                      <div>{formik.errors.contactNo}</div>
+                    ) : null}
                     <div className="text-lg font-bold">Email Id</div>
                     <input
-                      name="email"
-                      type="enail"
+                      name="emailId"
+                      type="email"
                       placeholder="Email Id"
+                      id="emailId"
                       className="border border-black w-[80%] md:w-[60%] rounded text-sm p-2 my-1"
+                      onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
+                      value={formik.values.emailId}
                     />
+                    {formik.touched.emailId && formik.errors.emailId ? (
+                      <div>{formik.errors.emailId}</div>
+                    ) : null}
                     <div className="text-lg font-bold">Write to Us</div>
                     <textarea
-                      name="writetous"
+                      name="query"
                       type="text"
                       placeholder="Write your query"
+                      id="query"
                       className="border border-black w-[80%] md:w-[60%] rounded text-sm p-2 my-1"
+                      onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
+                      value={formik.values.query}
                     />
-                    <div className="w-[30%] md:w-[20%] text-center py-2 my-4 mx-auto text-lg font-bold bg-blue-400 rounded">
-                      Submit
+                    {formik.touched.query && formik.errors.query ? (
+                      <div>{formik.errors.query}</div>
+                    ) : null}
+                    <div className="px-4 py-1 mx-auto">
+                      <div className="w-[30%] mx-auto ">
+                        <button
+                          className="w-full py-2 mx-auto my-4 text-lg font-bold text-center bg-blue-400 rounded"
+                          name="submit"
+                          value="submit"
+                          type="submit"
+                        >
+                          Submit
+                        </button>
+                      </div>
                     </div>
                   </form>
                 </div>
